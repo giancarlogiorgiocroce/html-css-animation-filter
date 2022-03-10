@@ -88,13 +88,13 @@
 
 /* ESERCIZIO 10 */
 .ex-10-icon{
-    animation-name: rotazione;
+    animation-name: rotazione-ex-10;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-@keyframes rotazione {
+@keyframes rotazione-ex-10 {
     0% {
         transform: rotate(0deg);
     }
@@ -111,5 +111,24 @@
         transform: rotate(-360deg);
     }
 }
+
 /* ESERCIZIO 11 */
+.ex-11-icon:hover{
+    animation-name: rotazione-ex-11;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotazione-ex-11 {
+    0% {
+        transform: rotate(0deg);
+    }
+    92% {
+        transform: rotate(330deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 /* ESERCIZIO 12 */
