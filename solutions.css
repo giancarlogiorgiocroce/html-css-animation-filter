@@ -132,3 +132,93 @@
 }
 
 /* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: rotazione-ex-12-top;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: rotazione-ex-12-bottom;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotazione-ex-12-top {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(110px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes rotazione-ex-12-bottom {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(-95px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* ESERCIZIO 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: rotazione-ex-13-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: rotazione-ex-13-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotazione-ex-13-top {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(140px, 0px);
+    }
+    38% {
+        transform: translate(140px, 70px);
+    }
+    75% {
+        transform: translate(-30px, 70px);
+    }
+    88% {
+        transform: translate(-30px, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes rotazione-ex-13-bottom {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(-110px);
+    }
+    38% {
+        transform: translate(-110px, -70px);
+    }
+    75% {
+        transform: translate(50px, -70px);
+    }
+    88% {
+        transform: translate(50px, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
