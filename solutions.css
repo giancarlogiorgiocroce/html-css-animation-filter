@@ -9,7 +9,7 @@
 
 /* ESERCIZIO 2 */
 .ex-2-square{
-    transition: all 2s;
+    transition: width 2s;
 }
 
 .ex-2-square:active{
@@ -18,7 +18,7 @@
 
 /* ESERCIZIO 3 */
 .ex-3-square{
-    transition: all 0.5s;
+    transition: border-radius 0.5s;
 }
 
 .ex-3-square:hover{
@@ -27,11 +27,12 @@
 
 /* ESERCIZIO 4 */
 .ex-4-square{
-    transition: all 1s;
+    transition: opacity 1s;
 }
 
 .ex-4-square:hover{
-    background-color: rgba(255, 0, 0, 0);
+    /* background-color: rgba(255, 0, 0, 0); */
+    opacity: 0; /* In caso di fossero dei bordi, si opacizzerebbero anche quelli!*/
 }
 
 /* ESERCIZIO 5 */
@@ -48,9 +49,11 @@
 }
 
 /* ESERCIZIO 6 */
-.ex-6-img{
+/* .ex-6-img{
     transition: all 0s;
-}
+} 
+Essendo che la transizione è istantanea, non serve scrivere nulla.
+*/ 
 
 .ex-6-img:hover{
     filter: grayscale(100%);
@@ -87,7 +90,7 @@
 }
 
 /* ESERCIZIO 10 */
-.ex-10-icon{
+/* .ex-10-icon{
     animation-name: rotazione-ex-10;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -109,6 +112,15 @@
     }
     100% {
         transform: rotate(-360deg);
+    }
+} */
+.ex-10-icon{
+    animation: rotazione-ex-10 1s linear infinite;
+}
+/* Va da 100 a 0 per cui si muove in senso orario! */
+@keyframes rotazione-ex-10 {
+    100% {
+        transform: rotate(360deg);
     }
 }
 
